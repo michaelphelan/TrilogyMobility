@@ -1,0 +1,130 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Trilogy Engineer App v1</title>
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0" />
+    <style type="text/css">
+
+        .default {
+            border: 0px solid #808080;
+        }
+
+        body {
+            font-family: Verdana, sans-serif;
+        }
+
+        #container {
+            width: auto;
+            margin: 0 1px;
+            padding: 0px;
+        }
+
+        #header {
+            width: 100%;
+        }
+
+        #logo {
+            width: 100%;
+            height: 80px;
+            text-align: center;
+        }
+
+        #login {
+            width: 100%;
+            height: 15px;
+            margin-top: 10px;
+            font-size: 10pt;
+        }
+
+        #body {
+            width: 80%;
+            margin-left: 10%;
+            margin-top: 0.1em;
+        }
+
+        #footer {
+            width: 100%;
+            margin-top: 2em;
+            font-size: 7pt;
+        }
+
+        ol {
+            counter-reset: li; /* Initiate a counter */
+            list-style: none; /* Remove default numbering */
+            *list-style: decimal; /* Keep using default numbering for IE6/7 */
+            font: 15px 'trebuchet MS', 'lucida sans';
+            padding: 0;
+            margin-bottom: 4em;
+            text-shadow: 0 1px 0 rgba(255,255,255,.5);
+        }
+
+            ol ol {
+                margin: 0 0 0 2em; /* Add some left margin for inner lists */
+            }
+
+        .rounded-list a {
+            position: relative;
+            display: block;
+            padding: .4em .4em .4em 2em;
+            *padding: .4em;
+            margin: .5em 0;
+            background: #ddd;
+            color: #444;
+            text-decoration: none;
+            border-radius: .3em;
+            transition: all .3s ease-out;
+        }
+
+            .rounded-list a:hover {
+                background: #eee;
+            }
+
+                .rounded-list a:hover:before {
+                    transform: rotate(360deg);
+                }
+
+            .rounded-list a:before {
+                content: counter(li);
+                counter-increment: li;
+                position: absolute;
+                left: -1.3em;
+                top: 50%;
+                margin-top: -1.3em;
+                background: #87ceeb;
+                height: 2em;
+                width: 2em;
+                line-height: 2em;
+                border: .3em solid #fff;
+                text-align: center;
+                font-weight: bold;
+                border-radius: 2em;
+                transition: all .3s ease-out;
+            }
+
+    </style>
+</head>
+<body>
+    <div id="container" class="default">
+        <div id="header" class="default">
+            <div id="logo">
+                <img src="TrilogyLogo.png" alt="Trilogy Mobility" style="height: 95%" />
+            </div>
+            <div id="login">
+
+            </div>
+        </div>
+        <div id="body" class="default">
+            <p style="padding-bottom: 1em;text-align: justify; font-size: 0.8em;">At Trilogy, we are committed to providing market leading technology solutions to both our customers and employees. This Technician App provides links to productivity apps for Trilogy technicians.</p>
+            <ol class="rounded-list">
+                <li><a href="http://mobilityportaldev.hastie.local/Pages/Trilogy/EngineerViewer.aspx">Mobility Reporting App</a></li>
+            </ol>
+        </div>
+        <div id="footer" class="default">            
+        </div>
+    </div>
+    <script type="text/javascript">
+        var date = new Date();
+        document.getElementById("footer").innerHTML = '&copy; ' + date.getFullYear() + ' TSC Group Holdings Pty Ltd. All rights reserved.'
+    </script>
+</body>
+</html>
